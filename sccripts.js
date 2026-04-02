@@ -1,5 +1,6 @@
 const infoBox = document.getElementById('infoBox');
 
+/* This triggers the infobox when clicking a line */
 document.getElementById('line1').addEventListener('click', function() {
   infoBox.innerHTML = "The line I've used since childhood! Goes along Broadway and connects the central parts of Manhattan";
 });
@@ -12,6 +13,7 @@ document.getElementById('line3').addEventListener('click', function() {
   infoBox.innerHTML = "Considered as the MTAs fastest train due to its reliability. Manhattan to Brooklyn in seconds!";
 });
 
+/* This triggers the infobox after user inputs their favorite line */
 function showFavorite() {
   const input = document.getElementById('favoriteInput').value;
   if (input.trim() === "") {
